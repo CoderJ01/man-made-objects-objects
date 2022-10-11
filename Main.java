@@ -23,8 +23,7 @@ public class Main {
         car.setMaterials("plastic");
         System.out.println("Materials.........: " + car.getMaterials());
 
-        // space
-        System.out.println("");
+        System.out.println("");  // space
 
         // HOUSE
         House house = new House("concrete slab", 2000, 6, false, true, true);
@@ -37,10 +36,10 @@ public class Main {
         System.out.println("T/F - This house has a basement: " + house.hasBasement());
         System.out.println("T/F - This house has an attic..: " + house.hasAttic());
         house.setAtticArea(300);
-        System.out.println("Attic Area.....................: " + house.hasAttic());
+        System.out.println("Attic Area.....................: " + house.getAtticArea());
         System.out.println("T/F - This house has a backyard: " + house.hasBackyard());
         house.setBackyardArea(450);
-        System.out.println("Backyard Area..................: " + house.hasAttic());
+        System.out.println("Backyard Area..................: " + house.getBackyardArea());
         // methods from Bedroom (inner class)
         House.Bedroom bedroom = house.new Bedroom("twin-sized");
         System.out.println("BedType........................: " + bedroom.getBedType());
@@ -53,8 +52,5 @@ public class Main {
         house.setMaterials("cement");
         house.setMaterials("tiles");
         System.out.println("Materials......................: " + house.getMaterials());
-
-        
-
     }
 }
