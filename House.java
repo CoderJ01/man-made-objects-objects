@@ -99,7 +99,7 @@ public class House extends Building implements IComponent {
             this.basementArea = basementArea;
         }
         else {
-            System.out.println("Basement does not exist");
+            this.basementArea = -1;
         }
     }
 
@@ -108,7 +108,7 @@ public class House extends Building implements IComponent {
             this.atticArea = atticArea;
         }
         else {
-            System.out.println("Attic does not exist");
+            this.atticArea = -1;
         }
     }
 
@@ -117,7 +117,7 @@ public class House extends Building implements IComponent {
             this.backyardArea = backyardArea;
         }
         else {
-            System.out.println("Backyard does not exist");
+            this.backyardArea = -1;
         }
     }
 

@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         // CAR
-        Car car = new Car("parking brake", "exhaust emissions", "air cooling", "fully electric power steering", "manuel transmission", 100000, "Toyota", "Prius", "silver", 4);
+        Car car = new Car("parking brake", "exhaust emissions", "air cooling", "fully electric power steering", "manual transmission", 100000, "Toyota", "Prius", "silver", 4);
         System.out.println("*************CAR*************");
         // methods from MotorVehicle (super class)
         System.out.println("Brake Type: " + car.getBrakeType());
