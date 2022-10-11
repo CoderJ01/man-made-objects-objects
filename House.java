@@ -120,9 +120,7 @@ public class House extends Building implements IComponent {
     }
 
     @Override
-    public List<String> setMaterials(String material) {
-        List<String> listOfMaterials = new ArrayList<>();
-        listOfMaterials.add(material);
-        return listOfMaterials;
+    public String setMaterial(String material) {
+        return material;
     }
 }
