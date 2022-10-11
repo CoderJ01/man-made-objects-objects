@@ -14,5 +14,9 @@ public class Main {
         House.Bedroom bedroom = house.new Bedroom("twin-sized");
         System.out.println(house.getFoundationType());
         System.out.println(bedroom.getBedType());
+        bedroom.setPaintColors("royal blue");
+        bedroom.setPaintColors("dim gray");
+        System.out.println(bedroom.getPaintColors());
+
     }
 }

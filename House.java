@@ -32,7 +32,7 @@ public class House extends Building {
             return this.bedType;
         }  
 
-        public List<String> getPaintColor() {
+        public List<String> getPaintColors() {
             return this.paintColors;
         }
 
@@ -41,7 +41,7 @@ public class House extends Building {
             this.bedType = b;
         }
 
-        public void setColors(String color) {
+        public void setPaintColors(String color) {
             this.paintColors.add(color);
         }
     }
