@@ -3,7 +3,7 @@ public class Car extends MotorVehicle {
     private String make;
     private String model;
     private String color;
-    private int wheels;
+    private int numberOfWheels;
 
     // constructor
     public Car (String brake, String emission, String engine, String steering, String transmission, int mileage, String make, String model, String color, int wheels) {
@@ -11,7 +11,7 @@ public class Car extends MotorVehicle {
         this.make = make;
         this.model = model;
         this.color = color;
-        this.wheels = wheels;
+        this.numberOfWheels = wheels;
     }
 
     // getters
@@ -28,7 +28,7 @@ public class Car extends MotorVehicle {
     }
 
     public int getNumberOfWheels() {
-        return this.wheels;
+        return this.numberOfWheels;
     }
 
     // setters
@@ -45,6 +45,6 @@ public class Car extends MotorVehicle {
     }
 
     public void setNumberOfWheels(int wheels) {
-        this.wheels = wheels;
+        this.numberOfWheels = wheels;
     }
 }
