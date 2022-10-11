@@ -32,19 +32,19 @@ public class Car extends MotorVehicle {
     }
 
     // setters
-    public void getMake(String m) {
-        this.make = m;
+    public void getMake(String make) {
+        this.make = make;
     }
 
-    public void setModel(String m) {
-        this.model = m;
+    public void setModel(String model) {
+        this.model = model;
     }
 
-    public void setColor(String c) {
-        this.color = c;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public void setNumberOfWheels(int w) {
-        this.wheels = w;
+    public void setNumberOfWheels(int wheels) {
+        this.wheels = wheels;
     }
 }

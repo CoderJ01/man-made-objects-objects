@@ -37,8 +37,8 @@ public class House extends Building {
         }
 
         // setters
-        public void setBedType(String b) {
-            this.bedType = b;
+        public void setBedType(String bedType) {
+            this.bedType = bedType;
         }
 
         public void setPaintColors(String color) {
@@ -60,15 +60,15 @@ public class House extends Building {
     }
 
     // setters
-    public void setBasement(boolean b) {
-        this.hasBasement = b;
+    public void setBasement(boolean basement) {
+        this.hasBasement = basement;
     }
 
-    public void setAttic(boolean a) {
-        this.hasAttic = a;
+    public void setAttic(boolean attic) {
+        this.hasAttic = attic;
     }
 
-    public void setBackyard(boolean b) {
-        this.hasBackyard = b;
+    public void setBackyard(boolean backyard) {
+        this.hasBackyard = backyard;
     }
 }

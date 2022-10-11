@@ -25,15 +25,15 @@ public abstract class Building {
     }
 
     // setters
-    public void setFoundationType(String f) {
-        this.foundationType = f;
+    public void setFoundationType(String foundationType) {
+        this.foundationType = foundationType;
     }
 
-    public void setArea(int a) {
-        this.area = a;
+    public void setArea(int area) {
+        this.area = area;
     }
 
-    public void setNumberOfRooms(int r) {
-        this.numberOfRooms = r;
+    public void setNumberOfRooms(int rooms) {
+        this.numberOfRooms = rooms;
     }
 }

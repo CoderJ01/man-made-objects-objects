@@ -43,27 +43,27 @@ public abstract class MotorVehicle {
     }
 
     // setters
-    public void setBrakeType(String b) {
-        this.brakeSystemType = b;
+    public void setBrakeType(String brakeType) {
+        this.brakeSystemType = brakeType;
     }
 
-    public void setEmitType(String e) {
-        this.emissionSystemType = e;
+    public void setEmitType(String emisonType) {
+        this.emissionSystemType = emisonType;
     }
 
-    public void setCoolingType(String e) {
-        this.engineCoolingSystemType = e;
+    public void setCoolingType(String coolingType) {
+        this.engineCoolingSystemType = coolingType;
     }
 
-    public void setSteeringType(String s) {
-        this.steeringType = s;
+    public void setSteeringType(String steeringType) {
+        this.steeringType = steeringType;
     }
 
-    public void setTransmissionType(String t) {
-        this.transmissionType = t;
+    public void setTransmissionType(String trasmissionType) {
+        this.transmissionType = trasmissionType;
     }
 
-    public void setMileage(int m) {
-        this.mileage = m;
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
     }
 }
