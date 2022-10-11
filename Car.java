@@ -13,4 +13,21 @@ public class Car extends MotorVehicle {
         this.color = color;
         this.wheels = wheels;
     }
+
+    // getters
+    public String getMake() {
+        return this.make;
+    }
+
+    public String getModel() {
+        return this.model;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public int getNumberOfWheels() {
+        return this.wheels;
+    }
 }
