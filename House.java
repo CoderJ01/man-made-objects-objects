@@ -10,6 +10,38 @@ public class House extends Building {
         this.hasBackyard = basement;
         this.hasAttic = attic;
         this.hasBackyard = backyard;
+        Color color = new Color("white", "gray");
+    }
+
+    // inner class for House color scheme
+    private class Color {
+        // variables
+        private String primaryColor;
+        private String secondaryColor;
+
+        // constructor
+        public Color(String primary, String secondary) {
+            this.primaryColor = primary;
+            this.secondaryColor = secondary;
+        }
+
+        // getters
+        public String getPrimaryColor() {
+            return this.primaryColor;
+        }  
+
+        public String getSecondaryColor() {
+            return this.secondaryColor;
+        }
+
+        // setters
+        public void setPrimaryColor(String p) {
+            this.primaryColor = p;
+        }
+
+        public void setSecondaryColor(String s) {
+            this.secondaryColor = s;
+        }
     }
 
     // getters
