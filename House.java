@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class House extends Building {
     // primative variables
     private boolean hasBasement;
@@ -16,12 +19,12 @@ public class House extends Building {
     public class Bedroom {
         // variables
         private String bedType;
-        private String paintColor;
+        private List<String> paintColors = new ArrayList<>();
 
         // constructor
-        public Bedroom(String bed, String color) {
+        public Bedroom(String bed, String colors) {
             this.bedType = bed;
-            this.paintColor = color;
+            this.paintColors = new ArrayList<>();
         }
 
         // getters
@@ -29,8 +32,8 @@ public class House extends Building {
             return this.bedType;
         }  
 
-        public String getPaintColor() {
-            return this.paintColor;
+        public List<String> getPaintColor() {
+            return this.paintColors;
         }
 
         // setters
@@ -38,8 +41,8 @@ public class House extends Building {
             this.bedType = b;
         }
 
-        public void setSecondaryColor(String c) {
-            this.paintColor = c;
+        public void setSecondaryColor(String color) {
+            this.paintColors.add(color);
         }
     }
 
