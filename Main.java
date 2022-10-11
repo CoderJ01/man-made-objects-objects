@@ -4,7 +4,7 @@ public class Main {
         // CAR
         Car car = new Car("parking brake", "exhaust emissions", "air cooling", "fully electric power steering", "manuel transmission", 100000, "Toyota", "Prius", "silver", 4);
         System.out.println("*************CAR*************");
-        // methods from Building (super class)
+        // methods from MotorVehicle (super class)
         System.out.println("Brake Type: " + car.getBrakeType());
         System.out.println("Emission Type....: " + car.getEmitType());
         System.out.println("Cooling Type.....: " + car.getCoolingType());
@@ -22,6 +22,9 @@ public class Main {
         car.setMaterials("glass");
         car.setMaterials("plastic");
         System.out.println("Materials.........: " + car.getMaterials());
+
+        // space
+        System.out.println("");
 
         // HOUSE
         House house = new House("concrete slab", 2000, 6, false, true, true);
@@ -49,7 +52,7 @@ public class Main {
         house.setMaterials("brick");
         house.setMaterials("cement");
         house.setMaterials("tiles");
-        System.out.println("Materials.......................: " + house.getMaterials());
+        System.out.println("Materials......................: " + house.getMaterials());
 
         
 
