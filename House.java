@@ -9,6 +9,8 @@ public class House extends Building implements IComponent {
     private int basementArea;
     private int atticArea;
     private int backyardArea;
+
+    // array of Strings
     private List<String> materials = new ArrayList<>();
 
     // constructor
@@ -19,7 +21,7 @@ public class House extends Building implements IComponent {
         this.hasBackyard = backyard;
     }
 
-    // inner class for House color scheme
+    // inner class 
     public class Bedroom {
         // variables
         private String bedType;
@@ -28,7 +30,6 @@ public class House extends Building implements IComponent {
         // constructor
         public Bedroom(String bed) {
             this.bedType = bed;
-            this.paintColors = new ArrayList<>();
         }
 
         // getters

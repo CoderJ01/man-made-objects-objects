@@ -44,7 +44,7 @@ public class Main {
         House.Bedroom bedroom = house.new Bedroom("twin-sized");
         System.out.println("BedType........................: " + bedroom.getBedType());
         bedroom.setPaintColors("navy blue");
-        bedroom.setPaintColors("dark");
+        bedroom.setPaintColors("dark gray");
         System.out.println("Bedroom colors.................: " + bedroom.getPaintColors());
         // methods derived from IComponent (interface)
         System.out.println("Number of windows..............: " + house.setNumberOfWindows(4));
