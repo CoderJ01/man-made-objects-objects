@@ -13,7 +13,7 @@ public class House extends Building {
     // constructor
     public House(String foundation, int area, int rooms, boolean basement, boolean attic, boolean backyard) {
         super(foundation, area, rooms);
-        this.hasBackyard = basement;
+        this.hasBasement = basement;
         this.hasAttic = attic;
         this.hasBackyard = backyard;
     }

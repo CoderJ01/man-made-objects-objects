@@ -10,13 +10,21 @@ public class Main {
         System.out.println("");
 
         // House test
-        House house = new House("concrete slab", 1500, 5, true, false, true);
+        House house = new House("concrete slab", 1500, 5, true, true, true);
         House.Bedroom bedroom = house.new Bedroom("twin-sized");
         System.out.println(house.getFoundationType());
         System.out.println(bedroom.getBedType());
         bedroom.setPaintColors("royal blue");
         bedroom.setPaintColors("dim gray");
         System.out.println(bedroom.getPaintColors());
+        System.out.println(house.hasBasement());
+        house.setBasementArea(345);
+        System.out.println(house.getBasementArea());
+        house.setAtticArea(210);
+        System.out.println(house.getAtticArea());
+        house.setBackyardArea(500);
+        System.out.println(house.getBackyardArea());
+        
 
     }
 }
