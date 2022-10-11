@@ -10,4 +10,17 @@ public abstract class Building {
         this.area = area;
         this.numberOfRooms = rooms;
     }
+
+    // getters
+    public String getFoundationType() {
+        return this.foundationType;
+    }
+
+    public int getArea() {
+        return this.area;
+    }
+
+    public int getNumberOfRooms() {
+        return this.numberOfRooms;
+    }
 }
