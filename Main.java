@@ -7,5 +7,12 @@ public class Main {
         System.out.println(car.getBrakeType());
         car.setColor("black");
         System.out.println(car.getColor());
+        System.out.println("");
+
+        // House test
+        House house = new House("concrete slab", 1500, 5, true, false, true);
+        House.Color color = house.new Color("beige", "white");
+        System.out.println(house.getFoundationType());
+        System.out.println(color.getPrimaryColor());
     }
 }

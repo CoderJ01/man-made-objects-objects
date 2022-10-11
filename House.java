@@ -5,16 +5,16 @@ public class House extends Building {
     private boolean hasBackyard;
 
     // constructor
-    public House(String foundation, int area, int rooms, boolean basement, boolean attic, boolean backyard, Color color) {
+    public House(String foundation, int area, int rooms, boolean basement, boolean attic, boolean backyard) {
         super(foundation, area, rooms);
         this.hasBackyard = basement;
         this.hasAttic = attic;
         this.hasBackyard = backyard;
-        color = new Color("white", "gray");
+        // Color color = new Color("white", "gray");
     }
 
     // inner class for House color scheme
-    private class Color {
+    public class Color {
         // variables
         private String primaryColor;
         private String secondaryColor;
