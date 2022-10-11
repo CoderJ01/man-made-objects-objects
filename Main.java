@@ -21,7 +21,7 @@ public class Main {
         car.setMaterials("metal");
         car.setMaterials("glass");
         car.setMaterials("plastic");
-        System.out.println("Materials.........: " + car.getMaterials());
+        System.out.println("Materials........: " + car.getMaterials());
 
         System.out.println("");  // space
 
