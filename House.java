@@ -11,4 +11,17 @@ public class House extends Building {
         this.hasAttic = attic;
         this.hasBackyard = backyard;
     }
+
+    // getters
+    public boolean hasBasement() {
+        return this.hasBasement;
+    }
+
+    public boolean hasAttic() {
+        return this.hasAttic;
+    }
+
+    public boolean hasBackyard() {
+        return this.hasBackyard;
+    }
 }
