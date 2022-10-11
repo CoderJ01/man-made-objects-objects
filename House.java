@@ -24,4 +24,17 @@ public class House extends Building {
     public boolean hasBackyard() {
         return this.hasBackyard;
     }
+
+    // setters
+    public void setBasement(boolean b) {
+        this.hasBasement = b;
+    }
+
+    public void setAttic(boolean a) {
+        this.hasAttic = a;
+    }
+
+    public void setBackyard(boolean b) {
+        this.hasBackyard = b;
+    }
 }
