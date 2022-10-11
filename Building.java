@@ -3,4 +3,11 @@ public abstract class Building {
     private String foundationType;
     private int area;
     private int numberOfRooms;
+
+    // constructor
+    public Building(String foundation, int area, int rooms) {
+        this.foundationType = foundation;
+        this.area = area;
+        this.numberOfRooms = rooms;
+    }
 }
