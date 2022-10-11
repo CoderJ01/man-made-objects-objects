@@ -11,8 +11,8 @@ public class Main {
 
         // House test
         House house = new House("concrete slab", 1500, 5, true, false, true);
-        House.PaintColor color = house.new PaintColor("beige", "white");
+        House.Bedroom bedroom = house.new Bedroom("twin-sized", "red");
         System.out.println(house.getFoundationType());
-        System.out.println(color.getPrimaryColor());
+        System.out.println(bedroom.getBedType());
     }
 }

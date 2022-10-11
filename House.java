@@ -13,33 +13,33 @@ public class House extends Building {
     }
 
     // inner class for House color scheme
-    public class PaintColor {
+    public class Bedroom {
         // variables
-        private String primaryColor;
-        private String secondaryColor;
+        private String bedType;
+        private String paintColor;
 
         // constructor
-        public PaintColor(String primary, String secondary) {
-            this.primaryColor = primary;
-            this.secondaryColor = secondary;
+        public Bedroom(String bed, String color) {
+            this.bedType = bed;
+            this.paintColor = color;
         }
 
         // getters
-        public String getPrimaryColor() {
-            return this.primaryColor;
+        public String getBedType() {
+            return this.bedType;
         }  
 
-        public String getSecondaryColor() {
-            return this.secondaryColor;
+        public String getPaintColor() {
+            return this.paintColor;
         }
 
         // setters
-        public void setPrimaryColor(String p) {
-            this.primaryColor = p;
+        public void setPrimaryColor(String b) {
+            this.bedType = b;
         }
 
-        public void setSecondaryColor(String s) {
-            this.secondaryColor = s;
+        public void setSecondaryColor(String c) {
+            this.paintColor = c;
         }
     }
 
