@@ -22,7 +22,7 @@ public class House extends Building {
         private List<String> paintColors = new ArrayList<>();
 
         // constructor
-        public Bedroom(String bed, String colors) {
+        public Bedroom(String bed) {
             this.bedType = bed;
             this.paintColors = new ArrayList<>();
         }

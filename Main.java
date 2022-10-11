@@ -11,7 +11,7 @@ public class Main {
 
         // House test
         House house = new House("concrete slab", 1500, 5, true, false, true);
-        House.Bedroom bedroom = house.new Bedroom("twin-sized", "red");
+        House.Bedroom bedroom = house.new Bedroom("twin-sized");
         System.out.println(house.getFoundationType());
         System.out.println(bedroom.getBedType());
     }
