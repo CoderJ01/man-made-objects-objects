@@ -7,6 +7,7 @@ public class Car extends MotorVehicle implements IComponent{
     private String model;
     private String color;
     private int numberOfWheels;
+    private List<String> materials = new ArrayList<>();
 
     // constructor
     public Car (String brake, String emission, String engine, String steering, String transmission, int mileage, String make, String model, String color, int wheels) {
@@ -39,6 +40,11 @@ public class Car extends MotorVehicle implements IComponent{
         return this.numberOfWheels;
     }
 
+    @Override
+    public List<String> getMaterials() {
+        return this.materials;
+    }
+
     // setters
     public void getMake(String make) {
         this.make = make;
@@ -67,7 +73,7 @@ public class Car extends MotorVehicle implements IComponent{
     }
 
     @Override
-    public String setMaterial(String material) {
-        return material;
+    public void setMaterials(String material) {
+        this.materials.add(material);
     }
 }

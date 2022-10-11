@@ -9,6 +9,7 @@ public class House extends Building implements IComponent {
     private int basementArea;
     private int atticArea;
     private int backyardArea;
+    private List<String> materials = new ArrayList<>();
 
     // constructor
     public House(String foundation, int area, int rooms, boolean basement, boolean attic, boolean backyard) {
@@ -74,6 +75,11 @@ public class House extends Building implements IComponent {
         return this.backyardArea;
     }
 
+    @Override
+    public List<String> getMaterials() {
+        return this.materials;
+    }
+
     // setters
     public void setBasement(boolean basement) {
         this.hasBasement = basement;
@@ -120,7 +126,7 @@ public class House extends Building implements IComponent {
     }
 
     @Override
-    public String setMaterial(String material) {
-        return material;
+    public void setMaterials(String material) {
+        this.materials.add(material);
     }
 }
