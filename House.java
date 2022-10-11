@@ -6,6 +6,9 @@ public class House extends Building {
     private boolean hasBasement;
     private boolean hasAttic;
     private boolean hasBackyard;
+    private int basementArea;
+    private int atticArea;
+    private int backyardArea;
 
     // constructor
     public House(String foundation, int area, int rooms, boolean basement, boolean attic, boolean backyard) {
@@ -59,6 +62,18 @@ public class House extends Building {
         return this.hasBackyard;
     }
 
+    public int getBasementArea() {
+        return this.basementArea;
+    }
+
+    public int getAtticArea() {
+        return this.atticArea;
+    }
+
+    public int getBackyardArea() {
+        return this.backyardArea;
+    }
+
     // setters
     public void setBasement(boolean basement) {
         this.hasBasement = basement;
@@ -70,5 +85,32 @@ public class House extends Building {
 
     public void setBackyard(boolean backyard) {
         this.hasBackyard = backyard;
+    }
+
+    public void setBasementArea(int basementArea) {
+        if(hasBasement() == true) {
+            this.basementArea = basementArea;
+        }
+        else {
+            System.out.println("Basement does not exist");
+        }
+    }
+
+    public void setAtticArea(int atticArea) {
+        if(hasAttic() == true) {
+            this.atticArea = atticArea;
+        }
+        else {
+            System.out.println("Attic does not exist");
+        }
+    }
+
+    public void setBackyardArea(int backyardArea) {
+        if(hasBackyard() == true) {
+            this.backyardArea = backyardArea;
+        }
+        else {
+            System.out.println("Backyard does not exist");
+        }
     }
 }
