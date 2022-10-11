@@ -37,11 +37,11 @@ public class House extends Building {
         }
 
         // setters
-        public void setPrimaryColor(String b) {
+        public void setBedType(String b) {
             this.bedType = b;
         }
 
-        public void setSecondaryColor(String color) {
+        public void setColors(String color) {
             this.paintColors.add(color);
         }
     }
