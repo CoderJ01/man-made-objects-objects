@@ -16,4 +16,29 @@ public abstract class MotorVehicle {
         this.transmissionType = transmission;
         this.mileage = mileage;
     }
+
+    // getters
+    public String getBrakeType() {
+        return this.brakeSystemType;
+    }
+
+    public String getEmitType() {
+        return this.emissionSystemType;
+    }
+
+    public String getCoolingType() {
+        return this.engineCoolingSystemType;
+    }
+
+    public String getSteeringType() {
+        return this.steeringType;
+    }
+
+    public String getTransmissionType() {
+        return this.transmissionType;
+    }
+
+    public int getMileage() {
+        return this.mileage;
+    }
 }
