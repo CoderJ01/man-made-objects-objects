@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
+        // CAR
         Car car = new Car("parking brake", "exhaust emissions", "air cooling", "fully electric power steering", "manuel transmission", 100000, "Toyota", "Prius", "silver", 4);
         System.out.println("*****CAR*****");
         // methods from Building (super class)
