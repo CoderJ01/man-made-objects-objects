@@ -10,7 +10,6 @@ public class House extends Building {
         this.hasBackyard = basement;
         this.hasAttic = attic;
         this.hasBackyard = backyard;
-        // Color color = new Color("white", "gray");
     }
 
     // inner class for House color scheme
