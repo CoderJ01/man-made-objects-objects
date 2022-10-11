@@ -14,13 +14,13 @@ public class House extends Building {
     }
 
     // inner class for House color scheme
-    public class Color {
+    public class PaintColor {
         // variables
         private String primaryColor;
         private String secondaryColor;
 
         // constructor
-        public Color(String primary, String secondary) {
+        public PaintColor(String primary, String secondary) {
             this.primaryColor = primary;
             this.secondaryColor = secondary;
         }
