@@ -41,4 +41,29 @@ public abstract class MotorVehicle {
     public int getMileage() {
         return this.mileage;
     }
+
+    // setters
+    public void setBrakeType(String b) {
+        this.brakeSystemType = b;
+    }
+
+    public void setEmitType(String e) {
+        this.emissionSystemType = e;
+    }
+
+    public void setCoolingType(String e) {
+        this.engineCoolingSystemType = e;
+    }
+
+    public void setSteeringType(String s) {
+        this.steeringType = s;
+    }
+
+    public void setTransmissionType(String t) {
+        this.transmissionType = t;
+    }
+
+    public void setMileage(int m) {
+        this.mileage = m;
+    }
 }
