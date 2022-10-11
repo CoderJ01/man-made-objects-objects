@@ -3,9 +3,10 @@ public class Main {
     public static void main(String[] args) {
         // CAR
         Car car = new Car("parking brake", "exhaust emissions", "air cooling", "fully electric power steering", "manual transmission", 100000, "Toyota", "Prius", "silver", 4);
-        System.out.println("*************CAR*************");
+        System.out.println("CAR");
+        System.out.println("***");
         // methods from MotorVehicle (super class)
-        System.out.println("Brake Type: " + car.getBrakeType());
+        System.out.println("Brake Type.......: " + car.getBrakeType());
         System.out.println("Emission Type....: " + car.getEmitType());
         System.out.println("Cooling Type.....: " + car.getCoolingType());
         System.out.println("Steering Type....: " + car.getSteeringType());
@@ -27,7 +28,8 @@ public class Main {
 
         // HOUSE
         House house = new House("concrete slab", 2000, 6, false, true, true);
-        System.out.println("*******************HOUSE*******************");
+        System.out.println("HOUSE");
+        System.out.println("*****");
         // methods from Building (super class)
         System.out.println("Foundation.....................: " + house.getFoundationType());
         System.out.println("Area...........................: " + house.getArea());
