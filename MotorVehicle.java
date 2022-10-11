@@ -14,7 +14,12 @@ public abstract class MotorVehicle {
         this.engineCoolingSystemType = engine;
         this.steeringType = steering;
         this.transmissionType = transmission;
-        this.mileage = mileage;
+        if(mileage < 0) {
+            this.mileage = 0;
+        }
+        else {
+            this.mileage = mileage;
+        }
     }
 
     // getters
