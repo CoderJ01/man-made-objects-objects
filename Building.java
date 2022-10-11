@@ -7,8 +7,18 @@ public abstract class Building {
     // constructor
     public Building(String foundation, int area, int rooms) {
         this.foundationType = foundation;
-        this.area = area;
-        this.numberOfRooms = rooms;
+        if(area < 0) {
+            this.area = 0;
+        }
+        else {
+            this.area = area;
+        }
+        if(rooms < 0) {
+            this.numberOfRooms = 0;
+        }
+        else {
+            this.numberOfRooms = rooms;
+        }
     }
 
     // getters
@@ -30,10 +40,20 @@ public abstract class Building {
     }
 
     public void setArea(int area) {
-        this.area = area;
+        if(area < 0) {
+            this.area = 0;
+        }
+        else {
+            this.area = area;
+        }
     }
 
     public void setNumberOfRooms(int rooms) {
-        this.numberOfRooms = rooms;
+        if(rooms < 0) {
+            this.numberOfRooms = 0;
+        }
+        else {
+            this.numberOfRooms = rooms;
+        }
     }
 }

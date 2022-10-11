@@ -11,7 +11,12 @@ public class Car extends MotorVehicle {
         this.make = make;
         this.model = model;
         this.color = color;
-        this.numberOfWheels = wheels;
+        if(wheels < 0) {
+            this.numberOfWheels = 0;
+        }
+        else {
+            this.numberOfWheels = wheels;
+        }
     }
 
     // getters
@@ -45,6 +50,11 @@ public class Car extends MotorVehicle {
     }
 
     public void setNumberOfWheels(int wheels) {
-        this.numberOfWheels = wheels;
+        if(wheels < 0) {
+            this.numberOfWheels = 0;
+        }
+        else {
+            this.numberOfWheels = wheels;
+        }
     }
 }

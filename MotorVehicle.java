@@ -69,6 +69,11 @@ public abstract class MotorVehicle {
     }
 
     public void setMileage(int mileage) {
-        this.mileage = mileage;
+        if(mileage < 0) {
+            this.mileage = 0;
+        }
+        else {
+            this.mileage = mileage;
+        }
     }
 }
