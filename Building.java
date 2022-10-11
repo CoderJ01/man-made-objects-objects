@@ -23,4 +23,17 @@ public abstract class Building {
     public int getNumberOfRooms() {
         return this.numberOfRooms;
     }
+
+    // setters
+    public void setFoundationType(String f) {
+        this.foundationType = f;
+    }
+
+    public void setArea(int a) {
+        this.area = a;
+    }
+
+    public void setNumberOfRooms(int r) {
+        this.numberOfRooms = r;
+    }
 }
