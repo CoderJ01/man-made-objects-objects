@@ -1,4 +1,7 @@
-public class Car extends MotorVehicle {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Car extends MotorVehicle implements IComponent{
     // variables
     private String make;
     private String model;
@@ -56,5 +59,17 @@ public class Car extends MotorVehicle {
         else {
             this.numberOfWheels = wheels;
         }
+    }
+
+    @Override
+    public int setNumberOfWindows(int windows) {
+        return windows;
+    }
+
+    @Override
+    public List<String> setMaterials(String material) {
+        List<String> listOfMaterials = new ArrayList<>();
+        listOfMaterials.add(material);
+        return listOfMaterials;
     }
 }

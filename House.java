@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class House extends Building {
+public class House extends Building implements IComponent {
     // primative variables
     private boolean hasBasement;
     private boolean hasAttic;
@@ -112,5 +112,17 @@ public class House extends Building {
         else {
             System.out.println("Backyard does not exist");
         }
+    }
+
+    @Override
+    public int setNumberOfWindows(int windows) {
+        return windows;
+    }
+
+    @Override
+    public List<String> setMaterials(String material) {
+        List<String> listOfMaterials = new ArrayList<>();
+        listOfMaterials.add(material);
+        return listOfMaterials;
     }
 }
