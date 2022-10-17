@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class House extends Building implements IComponent {
-    // primative variables
+    // primitive variables
     private boolean hasBasement;
     private boolean hasAttic;
     private boolean hasBackyard;
